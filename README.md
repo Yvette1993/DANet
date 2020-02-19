@@ -45,6 +45,32 @@ We train our DANet-101 with only fine annotated data and submit our test results
 
   - Download the [Cityscapes](https://www.cityscapes-dataset.com/) dataset and convert the dataset to [19 categories](https://github.com/mcordts/cityscapesScripts/blob/master/cityscapesscripts/helpers/labels.py). 
   - Please put dataset in folder `./datasets`
+  ///////liyingying----->
+
+step0:Download the cityscapes datset and put it in DANet/datasets/
+
+step1:Download cityscapesScripts.git in DANet/datasets/
+
+   $ git clone https://github.com/mcordts/cityscapesScripts.git
+    
+    The folder relation like this:
+    ---DANet/datasets/
+       ---gtFine
+       ---leftImg8bit
+       ---cityscapesScripts
+
+step2:You need using cityscapesScripts/preparation/createTrainIdLabelImgs.py to create labels.
+
+    Please open the createTrainIdLabelImgs.py file and change the cityscapesPath.
+    such as : cityscapesPath = "/home/lisali/DANet/datasets"
+    
+    and then running the file just like: 
+          $ python cityscapesScripts/preparation/createTrainIdLabelImgs.py
+    you will get some image like gtFine/**/**_labelTrainIds.png which the groundTures for input.
+
+step3: You need creating train_fine.txt and val_fine.txt file for image's path.
+
+/////////------>2020/01/17
 
 4 . Evaluation
 
