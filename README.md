@@ -22,9 +22,23 @@ We train our DANet-101 with only fine annotated data and submit our test results
 2. Clone the repository:
 
    ```shell
-   git clone https://github.com/junfu1115/DANet.git 
-   cd DANet 
-   python setup.py install
+   
+   
+   ///////liyingying----->
+   ######create env and setup
+   $ conda create -n torch12 python=3.6
+   $ conda activate torch12
+   $ git clone https://github.com/junfu1115/DANet.git 
+   $ cd DANet 
+   $ python setup.py develop
+   $ pip install torchvision
+   $ cp -a build/lib encoding/
+   
+   ####test
+   $ cd danet
+   $ python test.py --help 
+   You are successful if you can check the args_params
+ ----->2020/02/19
    ```
    
 3. Dataset
