@@ -32,7 +32,7 @@ We train our DANet-101 with only fine annotated data and submit our test results
    $ cd DANet 
    $ python setup.py develop
    $ pip install torchvision
-   $ cp -a build/lib encoding/
+   $ cp -a build/lib /home/lisali/anaconda3/envs/torch12/lib/python3.6/site-packages/encoding/
    
    ####test
    $ cd danet
